@@ -58,7 +58,6 @@ const Card = (props: cardProps) => {
 			size={props.size == null ? 'small' : props.size}
 			bodyStyle={{ padding: props.notpadding == true ? 0 : '12px 12px' }}
 			title={props.title != null && <Cardtitle title={props.title} subtitle={props.subtitle} extra={props.extra} />}
-			align={props.align}
 			justify={props.justify}
 		>
 			{props.children}
