@@ -1,0 +1,36 @@
+{
+	"name": "Kimonev",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@ant-design/icons": "^4.7.0",
+		"@tanstack/react-query": "^4.3.9",
+		"@trpc/client": "^10.0.0-proxy-beta.0",
+		"@trpc/next": "^10.0.0-proxy-beta.0",
+		"@trpc/react": "^10.0.0-proxy-beta.0",
+		"@trpc/server": "^10.0.0-proxy-beta.0",
+		"antd": "^4.23.2",
+		"highcharts": "^10.2.1",
+		"highcharts-more": "^0.1.7",
+		"highcharts-react-official": "^3.1.0",
+		"next": "12.3.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"sass": "^1.54.9",
+		"zod": "^3.19.1"
+	},
+	"devDependencies": {
+		"@types/node": "18.7.18",
+		"@types/react": "18.0.20",
+		"@types/react-dom": "18.0.6",
+		"eslint": "8.23.1",
+		"eslint-config-next": "12.3.0",
+		"typescript": "4.8.3"
+	}
+}

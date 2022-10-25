@@ -1,0 +1,67 @@
+@use '../variables/color' as *;
+@use '../variables/media' as res;
+
+.widget {
+	width: 100%;
+	background: rgba($color: $blue, $alpha: 1);
+	// background: color(blue, light);
+
+	.widget-label {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		.label {
+			color: $white;
+			text-transform: capitalize;
+		}
+
+		.icon {
+			border: 2px solid;
+			font-size: 15px;
+			border-radius: 50px;
+			padding: 3px;
+			background: rgba($color: $white, $alpha: 1);
+
+			&-upper {
+				@extend .icon;
+				border-color: $green;
+
+				svg {
+					fill: darken($color: $green, $amount: 1);
+				}
+			}
+
+			&-down {
+				@extend .icon;
+				border-color: $red;
+
+				svg {
+					fill: darken($color: $red, $amount: 1);
+				}
+			}
+		}
+	}
+
+	.widget-count {
+		@extend .widget-label;
+		margin-top: 12px;
+
+		.counter,
+		.target {
+			// font-size: 20px;
+			color: $white;
+
+			.unit {
+				margin-left: 3px;
+				font-weight: bolder;
+			}
+
+			.currency {
+				font-size: smaller;
+				margin-right: 3px;
+			}
+		}
+	}
+}

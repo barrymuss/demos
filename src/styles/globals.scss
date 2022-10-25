@@ -1,0 +1,44 @@
+@import 'variables/color';
+@import 'variables/typo';
+@import 'variables/media';
+@import '~antd/dist/antd.css';
+
+* {
+	box-sizing: border-box;
+}
+
+label {
+	height: auto !important;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+}
+
+.ant-table {
+	margin: 0 !important;
+}
+
+.charts {
+	height: 100%;
+	width: 100%;
+	min-height: 350px;
+	position: relative;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+
+.modals {
+	.ant-modal-header {
+		padding: 10px 12px;
+	}
+
+	.ant-modal-body {
+		padding: 10px 12px;
+	}
+}

@@ -1,0 +1,42 @@
+@use 'style/variables/_color' as *;
+@use 'style/variables/_media' as res;
+
+.col-default {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	// padding-right: 2%;
+	margin-bottom: 5px;
+}
+
+.col-ellipsis {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 5px;
+
+	.text-ellipsis {
+		display: -webkit-box;
+		max-width: 100%;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+.action-col {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 60px;
+
+	&-break {
+		@extend .action-col;
+		max-width: 100%;
+	}
+}

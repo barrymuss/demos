@@ -1,0 +1,164 @@
+@use '../variables/color' as *;
+@use '../variables/media' as res;
+
+.menu-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	padding: 12px 8px;
+
+	// @include res.media(tablet) {
+	// 	width: 100%;
+	// 	padding: 12px 12px;
+	// 	flex-direction: row;
+	// 	justify-content: center;
+	// }
+
+	@media screen and (max-width: 370px) {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu-list {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+
+		.menu-item {
+			width: 100%;
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 6px;
+			}
+
+			.menu-button {
+				border-radius: 3px;
+				border: none;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				flex-direction: row;
+				height: 40px;
+				background: rgba($color: $blue, $alpha: 0.1);
+
+				.arrow {
+					margin-left: auto;
+					align-self: center;
+
+					svg {
+						height: 12px;
+						width: 12px;
+					}
+				}
+
+				svg {
+					height: 16px;
+					width: 16px;
+
+					path {
+						fill: $blue;
+					}
+				}
+
+				&-active {
+					@extend .menu-button;
+					color: $background;
+					background: rgba($color: $blue, $alpha: 1);
+
+					svg {
+						path {
+							fill: $white;
+						}
+					}
+				}
+
+				.button-label {
+					text-transform: capitalize;
+					font-size: 13px;
+
+					// @include res.media(phone) {
+					// 	display: none;
+					// }
+
+					// @include res.media(tablet) {
+					// 	display: none;
+					// }
+				}
+			}
+		}
+
+		// @include res.media(tablet) {
+		// 	flex-direction: row;
+		// 	padding: 0;
+		// 	background: transparent;
+
+		// 	.menu-item {
+		// 		margin: 0 6px;
+		// 	}
+		// }
+
+		// @media screen and (max-width: 370px) {
+		// 	padding: 3;
+		// 	width: 100%;
+		// 	justify-content: space-around;
+		// }
+	}
+}
+
+.submenu-list {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+	.submenu-item {
+		width: 100%;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 6px;
+		}
+
+		.submenu-button {
+			border-radius: 3px;
+			border: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			height: 40px;
+			background: rgba($color: $blue, $alpha: 0.1);
+
+			svg {
+				height: 16px;
+				width: 16px;
+
+				path {
+					fill: $blue;
+				}
+			}
+
+			&-active {
+				@extend .submenu-button;
+				color: $background;
+				background: rgba($color: $blue, $alpha: 1);
+
+				svg {
+					path {
+						fill: $white;
+					}
+				}
+			}
+
+			.button-label {
+				text-transform: capitalize;
+			}
+		}
+	}
+}
