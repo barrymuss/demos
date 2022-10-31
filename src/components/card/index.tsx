@@ -41,8 +41,6 @@ type cardProps = {
 	subtitle?: any;
 	extra?: any;
 	bodyStyle?: any;
-	justify?: any;
-	align?: any;
 };
 
 const Card = (props: cardProps) => {
@@ -58,7 +56,6 @@ const Card = (props: cardProps) => {
 			size={props.size == null ? 'small' : props.size}
 			bodyStyle={{ padding: props.notpadding == true ? 0 : '12px 12px' }}
 			title={props.title != null && <Cardtitle title={props.title} subtitle={props.subtitle} extra={props.extra} />}
-			justify={props.justify}
 		>
 			{props.children}
 			{props.meta ? <Meta title={props.meta.title} description={props.meta.description} /> : null}
