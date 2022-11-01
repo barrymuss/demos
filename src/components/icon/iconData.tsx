@@ -24,6 +24,7 @@ export { default as delete } from '@ant-design/icons/DeleteOutlined';
 export { default as plus } from '@ant-design/icons/PlusOutlined';
 
 export { default as filter } from '@ant-design/icons/FilterOutlined';
+export { default as upload } from '@ant-design/icons/UploadOutlined';
 
 // Menu
 export { default as homeIcon } from '@ant-design/icons/HomeOutlined';
