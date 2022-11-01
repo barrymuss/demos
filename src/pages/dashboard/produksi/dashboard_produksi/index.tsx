@@ -38,7 +38,7 @@ const DashboardProduksi = () => {
 	};
 
 	return (
-		<Card>
+		<Card title='Dashboard Produksi' subtitle='menampilkan data produksi (grafik & tabel)'>
 			<Grid>
 				<Grid.Col sm={24} md={12} lg={16} xl={12}>
 					<ProduksiFilter

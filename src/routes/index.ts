@@ -37,8 +37,8 @@ export const menuRoute = [
 		id: 'tekanan',
 		icon: 'controlIcon',
 		children: [
-			{ label: 'dashboard tekanan', id: 'submenu-item-2', link: '/' },
-			{ label: 'input tekanan', id: 'submenu-item-2', link: '/' },
+			{ label: 'dashboard tekanan', id: 'submenu-item-2', link: '/dashboard/tekanan/dasboard_tekanan' },
+			{ label: 'input tekanan', id: 'submenu-item-2', link: '/dashboard/tekanan/input_tekanan' },
 		],
 	},
 	{
@@ -46,10 +46,8 @@ export const menuRoute = [
 		id: 'keuangan',
 		icon: 'bankIcon',
 		children: [
-			{ label: 'Dashboard Keuangan', id: 'submenu-item-1' },
-			{ label: 'input keuangan', id: 'submenu-item-2' },
-			{ label: 'laporan keuangan', id: 'submenu-item-2' },
-			{ label: 'target keuangan', id: 'submenu-item-2' },
+			{ label: 'Dashboard Keuangan', id: 'submenu-item-1', link: '/dashboard/keuangan/dashboard_keuangan' },
+			{ label: 'laporan keuangan', id: 'submenu-item-2', link: '/dashboard/keuangan/laporan_keuangan' },
 		],
 	},
 	{
