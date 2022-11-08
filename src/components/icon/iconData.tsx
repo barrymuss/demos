@@ -25,6 +25,9 @@ export { default as plus } from '@ant-design/icons/PlusOutlined';
 
 export { default as filter } from '@ant-design/icons/FilterOutlined';
 export { default as upload } from '@ant-design/icons/UploadOutlined';
+export { default as close } from '@ant-design/icons/CloseOutlined';
+
+export { default as back } from '@ant-design/icons/RollbackOutlined';
 
 // Menu
 export { default as homeIcon } from '@ant-design/icons/HomeOutlined';

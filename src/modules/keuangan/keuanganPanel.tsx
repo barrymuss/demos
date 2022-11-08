@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 
 import { Card, Grid } from 'components';
 import Grafik from 'modules/grafik';
-import KeuanganTable from './keuanganTable';
+import { PanelTable } from './keuanganTable';
 
 export type KeuanganProps = {
 	chart?: any;
@@ -70,7 +70,7 @@ const KeuanganPanel: FC<KeuanganProps> = ({ chart, table, empty, type = 'milion'
 			</Grid.Col>
 			<Grid.Col>
 				<Card title={table?.title} subtitle={table?.subtitle} notshadow notpadding>
-					<KeuanganTable type={type} data={table?.data} />
+					<PanelTable type={type} data={table?.data} />
 				</Card>
 			</Grid.Col>
 		</Grid>

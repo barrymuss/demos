@@ -16,7 +16,7 @@ export { default as Tabset } from './tabset';
 export { Table, TableCol, TableAction } from './table';
 export { default as Modal } from './modal';
 
-export { Input, Form, Radio, Select, Dropdown, Checkbox } from './forms';
+export { Input, Form, Radio, Select, Dropdown, Checkbox, UploadDocument } from './forms';
 export { default as Label } from './label';
 export { default as Empty } from './empty';
 
