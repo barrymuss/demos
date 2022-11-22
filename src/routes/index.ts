@@ -64,8 +64,8 @@ export const menuRoute = [
 		id: 'pelayanan',
 		icon: 'starIcon',
 		children: [
-			{ label: 'dashboard layanan', id: 'submenu-item-1' },
-			{ label: 'cakupan layanan', id: 'submenu-item-2' },
+			{ label: 'dashboard layanan', id: 'submenu-item-1', link: '/dashboard/pelayanan/dashboard_pelayanan' },
+			{ label: 'cakupan layanan', id: 'submenu-item-2', link: '/dashboard/pelayanan/cakupan_pelayanan' },
 		],
 	},
 	{
