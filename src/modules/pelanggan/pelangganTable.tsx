@@ -5,9 +5,10 @@ import { capitalize } from 'function';
 
 type ProdTableProps = {
 	empty?: any;
+	datetime?: any;
 };
 
-const ProduksiTable: FC<TableProps & ProdTableProps> = ({
+const PelangganTable: FC<TableProps & ProdTableProps> = ({
 	data,
 	columns,
 	pagination,
@@ -15,6 +16,7 @@ const ProduksiTable: FC<TableProps & ProdTableProps> = ({
 	rowKey,
 	rowSelection,
 	empty,
+	datetime,
 }) => {
 	return (
 		<Table
@@ -23,7 +25,7 @@ const ProduksiTable: FC<TableProps & ProdTableProps> = ({
 			rowKey={(record: any) => record.mitra_id}
 			columns={[
 				{
-					title: 'Data Produksi',
+					title: 'Data Pelanggan',
 					responsive: ['xs'],
 					render: (record: any) => (
 						<>
@@ -32,7 +34,7 @@ const ProduksiTable: FC<TableProps & ProdTableProps> = ({
 					),
 				},
 				{
-					title: 'Data Produksi',
+					title: 'Data Pelanggan',
 					align: 'center',
 					dataIndex: 'mitra',
 					render: (text: any) => <span style={{ textTransform: 'uppercase' }}>{text}</span>,
@@ -186,16 +188,6 @@ const ProduksiTable: FC<TableProps & ProdTableProps> = ({
 								},
 								responsive: ['md'],
 							},
-							{
-								title: 'Total',
-								dataIndex: 'data',
-								align: 'center',
-								render: (record: any) => {
-									const total = record.reduce((a: any, v: any) => (a = a + v), 0);
-									return <>{total}</>;
-								},
-								responsive: ['md'],
-							},
 						]}
 					/>
 				),
@@ -205,4 +197,4 @@ const ProduksiTable: FC<TableProps & ProdTableProps> = ({
 	);
 };
 
-export default ProduksiTable;
+export default PelangganTable;
