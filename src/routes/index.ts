@@ -55,8 +55,8 @@ export const menuRoute = [
 		id: 'pelanggan',
 		icon: 'teamIcon',
 		children: [
-			{ label: 'dashboard pelanggan', id: 'submenu-item-1' },
-			{ label: 'data pelanggan', id: 'submenu-item-2' },
+			{ label: 'dashboard pelanggan', id: 'submenu-item-1', link: '/dashboard/pelanggan/dashboard_pelanggan' },
+			{ label: 'data jumlah pelanggan', id: 'submenu-item-2', link: '/dashboard/pelanggan/data_jumlah_pelanggan' },
 		],
 	},
 	{
